@@ -8,6 +8,7 @@ const answerFour = document.getElementById("four");
 const resultBox = document.getElementById("result-box");
 const barBox = document.getElementById("bar-container");
 const scorePlacer = document.getElementById('scored');
+let myMusic= document.getElementById("music");
 let barValue = 0;
 let result;
 let checker = 0;
@@ -59,6 +60,7 @@ const click = (check) => {
     alert("answerIsLocked");
   } else {
     check.className = "active";
+    play();
     userAnswers.push(check.id);
     if (checker === questions.length) {
       resultBox.innerHTML = `
@@ -103,6 +105,9 @@ const scoreCalculation  = () => {
   return totalScore;
 };
 
+function play() {
+  myMusic.play();
+}
 nextBtn.addEventListener("click", nextQuestion);
 answerOne.addEventListener("click", click.bind(null, answerOne));
 answerTwo.addEventListener("click", click.bind(null, answerTwo));
