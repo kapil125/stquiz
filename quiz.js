@@ -93,7 +93,6 @@ const totalScored = () => {
   let intervaler = setInterval(progressBar, 50);
 };
 
-
 const scoreCalculation  = () => {
   let totalScore = 0;
   for(i = 0; i< userAnswers.length; i++) {
