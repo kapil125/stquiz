@@ -109,8 +109,3 @@ answerOne.addEventListener("click", click.bind(null, answerOne));
 answerTwo.addEventListener("click", click.bind(null, answerTwo));
 answerThree.addEventListener("click", click.bind(null, answerThree));
 answerFour.addEventListener("click", click.bind(null, answerFour));
-  
-function haha() {
-let audio = new Audio('music/strangerThings.mp3');
-audio.play();
-};
