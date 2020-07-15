@@ -9,6 +9,7 @@ const resultBox = document.getElementById("result-box");
 const barBox = document.getElementById("bar-container");
 const scorePlacer = document.getElementById('scored');
 let myMusic= document.getElementById("music");
+
 let barValue = 0;
 let result;
 let checker = 0;
@@ -95,6 +96,7 @@ const totalScored = () => {
   let intervaler = setInterval(progressBar, 50);
 };
 
+
 const scoreCalculation  = () => {
   let totalScore = 0;
   for(i = 0; i< userAnswers.length; i++) {
@@ -105,11 +107,12 @@ const scoreCalculation  = () => {
   return totalScore;
 };
 
-function play() {
-  myMusic.play();
-}
 nextBtn.addEventListener("click", nextQuestion);
 answerOne.addEventListener("click", click.bind(null, answerOne));
 answerTwo.addEventListener("click", click.bind(null, answerTwo));
 answerThree.addEventListener("click", click.bind(null, answerThree));
 answerFour.addEventListener("click", click.bind(null, answerFour));
+  
+function play() {
+  myMusic.play();
+}
