@@ -15,12 +15,7 @@ let result;
 let checker = 0;
 let userAnswers = [];
 
-const songPlaying = window.confirm('Wants To Play Quiz With StrangerThings Theme Song????');
-if(songPlaying === true) {
-  play();
-} else{
-  alert('Theme Song Will Not Be Played');
-}
+alert("StrangerThings Theme Music Will Be Played!!!!!!!!!");
 
 const questions = [
   `2)What is real name of Mike Wheeler?`,
@@ -79,6 +74,7 @@ const click = (check) => {
     alert("answerIsLocked");
   } else {
     check.className = "active";
+    play();
     userAnswers.push(check.id);
     if (checker === questions.length) {
       resultBox.innerHTML = `
